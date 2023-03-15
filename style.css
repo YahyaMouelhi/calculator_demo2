@@ -1,0 +1,351 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #eee;
+}
+
+hr{
+    margin: 32px auto;
+}
+
+/* calculator stuff */
+
+.calculator-body{
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%,-5%);
+    padding: 62px 38px;
+    background-color: whitesmoke;
+    box-shadow: 0 0 8px 2px black ;
+    border-radius: 8px;
+    z-index: 3;
+    width: 20%;
+}
+
+button{
+    cursor: pointer;
+    width: 18%;
+    float: left;
+    height: 42px;
+    margin: 1%;
+    background-color: #eee;
+    color: #23272a;
+    border-radius: 8px;
+}
+
+button:hover{
+    background-color: #23272a;
+    color: #eee;
+}
+
+input{
+    height: 42px;
+    width: 100%;
+    padding: 2px;
+    font-size: 26px;
+    background-color: whitesmoke;
+    border-radius: 6px;
+}
+
+/* the intro div */
+
+.intro{
+    width: 26%;
+    height: 12%;
+    position: absolute;
+    left: 50%;
+    top: 4%;
+    transform: translate(-50%,-5%);
+    padding: 46px 38px;
+    background-color: whitesmoke;
+    box-shadow: 0 0 8px 2px black ;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.intro .description {
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%,-50%);
+}
+
+.intro #man-btn{
+    width: 100%;
+    font-size: 24px;
+    color: greenyellow;
+    background-color: rgb(47, 100, 0);
+}
+
+.intro #man-btn:hover{
+    color: rgb(153, 255, 0);
+    background-color: rgb(61, 130, 0);
+}
+
+.intro p{
+    color: rgb(0, 81, 108);
+    text-decoration: solid;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+
+/* the outro div */
+
+.outro{
+    width: 26%;
+    height: 12%;
+    position: absolute;
+    left: 50%;
+    bottom: 4%;
+    transform: translate(-50%,-12%);
+    padding: 46px 38px;
+    background-color: whitesmoke;
+    box-shadow: 0 0 8px 2px black ;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.outro .description{
+    position: absolute;
+    width: 80%;
+    bottom: 26%;
+}
+
+.outro .description p:first-child{
+    color: rgb(134, 0, 136);
+    font-size: 20px;
+    text-align: center;
+}
+
+.outro .description p:last-child{
+    color: #23272a;
+    font-size: 16px;
+    text-align: center;
+}
+
+.outro .socials{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+}
+
+.outro .socials a{
+    font-size: 26px;
+    width: 20%;
+    float: left;
+    text-align: center;
+}
+
+.outro .socials a:first-child{
+    color: rgb(255, 114, 32);
+}
+
+.outro .socials a:first-child:hover{
+    color: rgb(155, 58, 2);
+}
+
+.outro .socials a:nth-child(2){
+    color: red;
+}
+
+.outro .socials a:nth-child(2):hover{
+    color: rgb(137, 0, 0);
+}
+
+.outro .socials a:nth-child(3){
+    color: rgb(0, 132, 77);
+}
+
+.outro .socials a:nth-child(3):hover{
+    color: rgb(0, 71, 41);
+}
+
+.outro .socials a:nth-child(4){
+    color: #2d353a;
+}
+
+.outro .socials a:nth-child(4):hover{
+    color: #080808;
+}
+
+.outro .socials a:last-child{
+    color: rgb(0, 17, 255);
+}
+
+.outro .socials a:last-child:hover{
+    color: rgb(0, 8, 116);
+}
+
+
+/* manual page stuff */
+
+.hidden{
+    display: none;
+}
+
+
+.man{
+    position: absolute;
+    background-color: #23272a;
+    color: whitesmoke;
+    height: 80%;
+    width: 82%;
+    border-radius: 12px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+}
+
+.man h1{
+    color: #ff00bb;
+}
+
+.info{
+    padding: 60px;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #23272a;
+    opacity: 0.75;
+    z-index: 5;
+}
+
+#close-man{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 2px;
+    border-style: none;
+    font-size: 38px;
+    width: 46px;
+    height: 46px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+#close-man:hover{
+    background-color: #23272a;
+}
+
+/* Responsive part */
+
+@media  screen and (max-width:700px) {
+    .intro{
+        width: 56%;
+    }
+    
+    .intro .description {
+        width: 80%;
+    }
+    
+    .intro #man-btn{
+        width: 100%;
+        font-size: 14px;
+    }
+    
+    .intro p{
+        font-size: 14px;
+    }
+
+    /* calculator */
+    .calculator-body{
+        width: 50%;
+    }
+    
+    button{
+        width: 18%;
+    }
+    
+    input{
+        font-size: 10px;
+    }
+
+    /* the outro div */
+
+    .outro{
+        width: 56%;
+    }
+
+    .outro .description{
+        width: 80%;
+    }
+
+    .outro .description p:first-child{
+        font-size: 14px;
+    }
+
+    .outro .description p:last-child{
+        font-size: 10px;
+    }
+
+    /* man */
+
+    .man h1 {
+        font-size: 12px;
+    }
+
+    .man ul li{
+        font-size: 8px;
+    }
+
+
+}
+
+@media  screen and (max-width:1680px) and (min-width:701px) {
+    .intro{
+        width: 36%;
+    }
+    
+    .intro .description {
+        width: 80%;
+    }
+    
+    .intro #man-btn{
+        font-size: 18px;
+    }
+    
+    
+    .intro p{
+        font-size: 16px;
+    }
+
+    /* calculator */
+    .calculator-body{
+        width: 30%;
+    }
+    
+    button{
+        width: 18%;
+    }
+    
+    input{
+        font-size: 14px;
+    }
+
+    /* the outro div */
+
+    .outro{
+        width: 36%;
+    }
+
+    .outro .description p:first-child{
+        font-size: 18px;
+    }
+
+    .outro .description p:last-child{
+        font-size: 14px;
+    }
+
+}
